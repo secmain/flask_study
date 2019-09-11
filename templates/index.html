@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-widt, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="chrome">
+	<title>のリログ</title>
+</head>
+<body>
+	<h1>乗りログ</h1>
+	<form action="/save" method="post">
+		<tr>
+			<td>
+				<label for="start">出発</label><br>
+				<input id="start" type="text" name="start" />
+			</td>
+			<td>
+				<label for="finish">到着</label>
+				<input id="finish" type="text" name="finish" />
+			</td>
+			<td>
+				<br>
+				<button>追加</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<label for="memo">メモ</label>
+				<textarea id="memo" name="memo"></textarea>
+			</td>
+		</tr>
+	</form>
+
+	<h3>乗り一覧</h3>
+	<table>
+		<tr>
+			<th>出発</th>
+			<th>到着</th>
+			<th>日時</th>
+			<th>メモ</th>
+		</tr>
+
+		<tr>
+			<td>護国サン</td>
+			<td>江の島</td>
+			<td>2017-01-02</td>
+			<td>メモ</td>
+		</tr>
+
+		<tr>
+			<td>護国サン2</td>
+			<td>江の島2</td>
+			<td>2017-05-02</td>
+			<td>メモ2</td>
+		</tr>
+	</table>
+</body>
+</html>
